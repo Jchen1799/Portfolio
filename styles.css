@@ -1,0 +1,150 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: aliceblue;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+nav ul {
+    padding: 0;
+    text-align: center;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+}
+
+nav ul li a:hover {
+    color: lightblue;
+}
+
+main {
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 1000px;
+    width: 100%;
+    text-align: left;
+    gap: 20px;
+}
+
+h2, .section-title {
+    text-align: center;
+    font-size: 2.2em;
+    font-weight: bold;
+}
+
+#about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 40px;
+}
+
+
+img {
+    width: 35%;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+    float: right; 
+    margin-left: 20px; 
+}
+
+
+p {
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.8;
+    font-size: 1.6em;
+}
+
+
+.button {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #267bb5;
+}
+
+footer {
+    background-color: gray;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer a {
+    color: beige;
+}
+
+footer a:hover {
+    color: lightblue;
+}
+
+
+@media (max-width: 768px) {
+    header {
+        padding: 15px;
+    }
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+    #about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    #about img {
+        width: 50%;
+        float: none; 
+        margin: 0 auto;
+    }
+    p {
+        font-size: 1.4em;
+    }
+}
+
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+    p {
+        font-size: 1.2em;
+    }
+    #about img {
+        width: 60%;
+    }
+}
